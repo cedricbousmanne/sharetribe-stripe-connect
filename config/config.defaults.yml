@@ -286,8 +286,8 @@ default: &default_settings
   external_search_offset_min: 0
 
   # Harmony service API connection
-  harmony_api_url:
-  harmony_api_disable_authentication: false
+  harmony_api_in_use: false
+  harmony_api_url: http://localhost:8085
   harmony_api_token_secret: secret_key1
 
   # Discovery service API connection
@@ -385,6 +385,39 @@ default: &default_settings
   # - https://s3.amazonaws.com/my-bucket/fonts/
   #
   font_proximanovasoft_url:
+
+  ##########################################
+  # Admin Intercom (sharetribe.com internal)
+  ##########################################
+
+  # Enable/disable Intercom Respond for Admin UI
+  admin_intercom_respond_enabled: false
+
+  # Admin Intercom App Id
+  admin_intercom_app_id: ""
+
+  # Admin Intercom secure mode secret
+  admin_intercom_secure_mode_secret: ""
+
+  # The percentage of new marketplaces where Admin Intercom Respond
+  # will be enabled
+  #
+  # Examples:
+  #
+  #   1: Enabled for everyone
+  # 0.8: Enabled for 80%
+  # 0.2: Enabled for 20%
+  #   0: Enabled for no one
+  #
+  admin_intercom_respond_test_group_ratio: 0
+
+  admin_intercom_access_token: ""
+
+  admin_intercom_admin_id: ""
+
+  #########
+  # Sitemap
+  #########
 
   # Maximum number of links in sitemap.xml.
   #

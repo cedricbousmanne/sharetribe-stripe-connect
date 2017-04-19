@@ -16,11 +16,11 @@ module PaypalCountryHelper
     "fr" => "https://www.paypal.com/fr/webapps/mpp/paypal-fees",
     "au" => "https://www.paypal.com/au/webapps/mpp/paypal-seller-fees",
     "no" => "https://www.paypal.com/no/webapps/mpp/paypal-fees",
-    "nz" => "https://www.paypal.com/nz/webapps/mpp/paypal-fees"
+    "nz" => "https://www.paypal.com/nz/webapps/mpp/paypal-fees",
+    "jp" => "https://www.paypal.com/jp/webapps/mpp/paypal-fees",
   }
 
   FEE_URL.default = "https://www.paypal.com/cgi-bin/marketingweb?cmd=_display-xborder-fees-outside"
-
 
   POPUP_URL = {
     # List all the contries that have the popup URL available
@@ -33,11 +33,11 @@ module PaypalCountryHelper
     # (and default English popup is not good)
     "br" => "https://www.paypal.com/br/webapps/mpp/home",
     "no" => "https://www.paypal.com/no/webapps/mpp/home",
-    "nz" => "https://www.paypal.com/nz/webapps/mpp/home"
+    "nz" => "https://www.paypal.com/nz/webapps/mpp/home",
+    "jp" => "https://www.paypal.com/jp/webapps/mpp/home",
   }
 
   POPUP_URL.default = "https://www.paypal.com/webapps/mpp/paypal-popup"
-
 
   CREATE_ACCOUNT_URL = {
     "au" => "https://www.paypal.com/au/webapps/mpp/account-selection",
@@ -45,6 +45,12 @@ module PaypalCountryHelper
 
   CREATE_ACCOUNT_URL.default = "https://www.paypal.com/%{country_code}/webapps/mpp/home"
 
+  UPGRADE_ACCOUNT_URL = {
+    "br" => "https://www.paypal.com/br/cgi-bin/webscr?cmd=_business-upgrade-flow",
+    "jp" => "https://www.paypal.com/jp/webapps/mpp/merchant"
+  }
+
+  UPGRADE_ACCOUNT_URL.default = "https://www.paypal.com/%{country_code}/upgrade"
 
   RECEIVE_FUNDS_INFO_LABEL_TR_KEY = {
     "au" => "paypal_accounts.paypal_receive_funds_info_label_australia_only",
@@ -70,6 +76,10 @@ module PaypalCountryHelper
 
   def create_paypal_account_url(country_code)
     CREATE_ACCOUNT_URL[country_code.to_s.downcase] % {country_code: country_code}
+  end
+
+  def upgrade_paypal_account_url(country_code)
+    UPGRADE_ACCOUNT_URL[country_code.to_s.downcase] % {country_code: country_code}
   end
 
   def receive_funds_info_label_tr_key(country_code)

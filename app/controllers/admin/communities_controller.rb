@@ -262,10 +262,12 @@ class Admin::CommunitiesController < ApplicationController
 
     params[:community][:custom_color1] = nil if params[:community][:custom_color1] == ""
     params[:community][:custom_color2] = nil if params[:community][:custom_color2] == ""
+    params[:community][:description_color] = nil if params[:community][:description_color] == ""
+    params[:community][:slogan_color] = nil if params[:community][:slogan_color] == ""
 
     permitted_params = [
       :wide_logo, :logo,:cover_photo, :small_cover_photo, :favicon, :custom_color1,
-      :custom_color2, :default_browse_view, :name_display_type
+      :custom_color2, :slogan_color, :description_color, :default_browse_view, :name_display_type
     ]
     permitted_params << :custom_head_script
     community_params = params.require(:community).permit(*permitted_params)
@@ -329,7 +331,6 @@ class Admin::CommunitiesController < ApplicationController
       :require_verification_to_post_listings,
       :show_category_in_listing_list,
       :show_listing_publishing_date,
-      :hide_expiration_date,
       :listing_comments_in_use,
       :automatic_confirmation_after_days,
       :automatic_newsletters,

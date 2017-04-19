@@ -21,8 +21,8 @@ cs:
         category_transaction_types:
           transaction_types: "Typy objednávek"
           transaction_types_description: "Typy objednávek určují, jaký druh objednávek bude povolen pro inzeráty v této kategorii. Například povoleno pouze pro prodám, pronajmu nebo pro daruji."
-          select_all: ~
-          clear_all: ~
+          select_all: "Vybrat vše"
+          clear_all: "Smazat vše"
         buttons:
           save: Uložit
           cancel: Zrušit
@@ -99,7 +99,11 @@ cs:
         favicon: "Ikona webové stránky"
         favicon_info_text: "Ikona webové stránky nahradí výchozí Sharetribe logo. Rozlišení by mělo být 32x32 pixelů a nahraný obrázek bude přizpůsoben těmto rozměrům."
         community_custom_color1: "Základní barva"
-        new_listing_button_custom_color: ~
+        community_slogan_color: ~
+        community_slogan_color_instructions_text: ~
+        community_description_color: ~
+        community_description_color_instructions_text: ~
+        new_listing_button_custom_color: "Barva tlačítka pro přidání nové položky"
         logo_instructions_text_with_dimensions: "Logo pozadí by mělo být %{width}x%{height}px. Toto logo se zobrazí uživatelům s většími obrazovkami."
         logo_instructions_text_with_dimensions_no_placing: ~
         logo_icon_instructions_text_with_dimensions: "Toto čtvercové logo se zobrazí v případě, pokud lidé sdílí Vaše stránky na Facebooku, když si je prohlížejí na mobilním zařízení nebo když nastaví Vaše stránky jako domovskou stránku na jejich mobilním zařízení. Rozměry by měly být (alespoň) %{width}x%{height}px."
@@ -144,6 +148,7 @@ cs:
         sender_name_placeholder: "Jméno odesílatele"
         sender_email_label: "E-mailová adresa"
         sender_email_placeholder: sender-email@example.com
+        amazon_ses_notification: ~
         this_is_how_it_will_look: "Takto to bude vypadat:"
         send_verification_button: "Ověřovací e-mail byl odeslán"
         successfully_saved: "Adresa odesílatele byla úspěšně uložena. Ověřovací e-mail bude brzy odeslán."
@@ -207,7 +212,6 @@ cs:
         transaction_preferences: "Nastavení transakcí"
         show_listing_publishing_date: "Zobrazit datum zveřejnění inzerátu na stránce inzerátu"
         show_category_in_listing_list: "Zobrazit typ inzerátu v seznamu zobrazení"
-        hide_expiration_date: "Nevyžadovat inzeráty s datem vypršení platnosti"
         listing_comments_in_use: "Povolit uživatelům přidávat příspěvky k inzerátům (viditelné pro všechny uživatele)"
         email_preferences: "Nastavení e-mailu"
         automatic_newsletters: "Zasílat automaticky denní / týdenní newsletter všem uživatelům (v případě, že nezruší zasílání)"
@@ -232,6 +236,7 @@ cs:
         manage_members: "Správa uživatelů"
         email: E-mail
         name: Jméno
+        display_name: "Zobrazované jméno"
         join_date: "Naposledy přihlášen"
         admin: Správce
         posting_allowed: "Přidávání příspěvků povoleno"
@@ -249,6 +254,7 @@ cs:
         enabled_for_you: ~
         enabled_for_all: ~
         new_topbar: ~
+        searchpage: ~
       social_media:
         social_media: "Sociální média"
         twitter_handle: Twitter
@@ -289,8 +295,8 @@ cs:
         about_page: ~
       topbar:
         topbar: ~
-        new_listing_button_label: ~
-        invalid_post_listing_button_label: ~
+        new_listing_button_label: "Text tlačítka pro přidání nové položky"
+        invalid_post_listing_button_label: "Vyplň, prosím, validní text pro tlačítko \"Přidej novou položku\""
       transactions:
         export_all_as_csv: "Exportovat vše do formátu CSV"
         transactions: Transakce
@@ -321,7 +327,7 @@ cs:
       edit:
         edit_listing_field: "Upravit pole inzerát %{field_name}"
       edit_price:
-        description: ~
+        description: "Minimální a maximální cena ovlivňují pouze nastavení filtru, na samotnou cenu nabídek nemají vliv."
         edit_price_field: "Upravit cenu pole"
         show_price_filter_homepage: "Ukázat cenový filtr na domovské stránce"
         price_min: "Minimální cena"
@@ -329,6 +335,9 @@ cs:
       edit_location:
         edit_location_field: "Upravit umístění"
         this_field_is_required: "Toto pole je povinné"
+      edit_expiration:
+        edit_expiration_field: ~
+        enable: ~
       form:
         field_required:
           this_field_is_required: "Toto pole je povinné"
@@ -347,8 +356,8 @@ cs:
         field_title: "Název pole"
         field_type: "Typ pole"
         categories: "Kategorie inzerátů, kde se pole vyskytuje"
-        select_all: ~
-        clear_all: ~
+        select_all: "Vybrat vše"
+        clear_all: "Smazat vše"
         options: Možnosti
         add_option: "+ Přidat možnost"
         saving_order: Uložit
@@ -486,14 +495,16 @@ cs:
     paypal_accounts:
       marketplace_paypal_integration: "Nastavení plateb"
       preferences_updated: "Nastavení plateb aktualizováno"
-      marketplace_currency_used: ~
-      contact_support_link_text: ~
+      contact_support_link_text: "kontaktovat podporu"
       integration_info_text: "Platební systém Sharetribe funguje díky PayPal. Pokud chcete uživatelům umožnit, aby prováděli platby přes Vaše tržiště, musíte se připojit ke svému PayPal účtu a zadat minimální velikost transakce a poplatek z každé provedené transakce."
-      link_paypal_personal_account_label: ~
-      link_paypal_personal_account: ~
-      personal_payment_preferences_link_text: ~
+      link_paypal_personal_account_label: "Poskytuješ sám produkty nebo služby?"
+      link_paypal_personal_account: "Pokud ano, budeš ještě muset spojit tvůj PayPal účet s %{personal_payment_preferences_link}"
+      personal_payment_preferences_link_text: "Tvůj osobní účet pro marketplace"
       read_more_about_paypal: "Přečtěte si více o Sharetribe platebním systému"
-      set_minimum_price_and_fee: "Nastavit minimální cenu & transakční poplatek"
+      edit_payment_settings: ~
+      supported_currencies_information_text: ~
+      currency_change_warning_text: ~
+      marketplace_currency_label: ~
       minimum_listing_price_label: "Minimální částka transakce:"
       transaction_fee_label: "Transakční poplatek:"
       minimum_transaction_fee_label: "Minimální transakční poplatek:"
@@ -775,8 +786,8 @@ cs:
       payment_settings_link: "nastavení plateb"
     transaction_confirmed:
       here_is_a_message_from: "Zde je zpráva od uživatele %{other_party_given_name}:"
-      request_marked_as_confirmed: "Žádost vyřízena - nezapomeňte ohodnotit uživatele"
-      request_marked_as_canceled: "Žádost zrušena"
+      request_marked_as_confirmed: "Objednávka vyřízena - nezapomeňte ohodnotit uživatele"
+      request_marked_as_canceled: "Objednávka zrušena"
       has_marked_request_as_confirmed: "Uživatel %{other_party_full_name} označil žádost %{request} jako vyřízenou. Nyní můžete ohodnotit uživatele %{other_party_given_name}."
       has_marked_request_as_canceled: "Uživatel %{other_party_full_name} zrušil žádost %{request}. Stále můžete ohodnotit uživatele %{other_party_given_name}."
       giving_feedback_is_good_idea: "Hodnocení je vždy užitečné. Pokud vše probíhalo dobře, měli byste dát ostatním vědět, že uživatel %{other_party_given_name} je důvěryhodný. V případě, že se vyskytly jakékoliv problémy, je dobré to také zmínit."
@@ -934,6 +945,7 @@ cs:
     transaction_agreement:
       required_error: "Je třeba souhlasit s podmínkami"
     paypal:
+      transaction_cannot_complete: ~
       buyer_cannot_pay_error: "Platba byla odmítnuta serverem PayPal. Prosíme, kontaktujte jejich zákaznický servis pro více informací: %{customer_service_link}"
       pending_review_error: "Platba byla provedena, ale byla serverem PayPal označena jako \"vyžaduje přezkoumání\". Jakmile PayPal dokončí přezkoumání platby, bude platba automaticky vyřízena."
       seller_express_checkout_disabled: ~
@@ -964,8 +976,8 @@ cs:
       javascript_is_disabled_in_your_browser: "Javascript je ve Vašem prohlížeči zablokován"
       kassi_does_not_currently_work_without_javascript: "%{service_name} nepracuje správně bez Javascriptu. Zkuste povolit Javascript v nastavení ve Vašem prohlížeči, a potom znovu aktualizujte tuto stránku."
       contact_us: "kontaktujte nás"
-      send_feedback: ~
-      your_feedback_to_admins: ~
+      send_feedback: "Poslat zprávu"
+      your_feedback_to_admins: "Tvoje zpráva pro %{service_name} tým"
     send: Poslat
     your_email_address: "Vaše a-mailová adresa"
   errors:
@@ -1071,7 +1083,7 @@ cs:
       is: je
       are: jsou
       what_do_you_need: "Co hledáte?"
-      post_new_listing: "Přidat nový inzerát"
+      post_new_listing: "Přidej novou položku"
       are_offering: nabídka
       add_news_item: "Přidat článek"
       lend_rent_help_carpool: "Prodejte, zapůjčte, pomozte, sdílejte jízdy"
@@ -1154,17 +1166,17 @@ cs:
     no_tribe:
       inbox: "Doručená pošta"
       settings: Nastavení
-      feedback: ~
+      feedback: "Kontaktovat %{service_name} tým"
     application:
       join_this_community: "Připojit se k tržišti"
       read_more: "Přečtete si více"
-      feedback: ~
+      feedback: "Tvoje zpráva pro %{service_name} tým"
       dont_use_to_contact_support: ~
       feedback_forum: "Diskuzní fórum"
       feedback_handle: "Napište nám"
       give_feedback: "Kontaktujte nás"
       or_check_our: "...nebo se podívejte na"
-      send_feedback_to_admin: ~
+      send_feedback_to_admin: "Poslat zprávu"
       to_see_what_others_have_suggested: "abyste viděli, co ostatní uživatelé navrhli a pro jaké nápady můžete hlasovat."
       your_email_address: "Vaše e-mailová adresa (abychom Vás mohli kontaktovat)"
       connect: "Zaregistrovat se"
@@ -1234,7 +1246,7 @@ cs:
       error_with_session: Chyba
       feedback_considered_spam: "Zpětná vazba nebyla uložena z důvodu jejího formátování. Zkuste to znovu nebo využijte diskuzního fóra."
       feedback_not_saved: "Zpětná vazba nemohla být odeslána."
-      feedback_saved: ~
+      feedback_saved: "Děkujeme za zprávu! Ozveme se Ti hned jak to bude možné."
       feedback_sent_to: "Zpětná vazba odeslána uživateli %{target_person}."
       feedback_skipped: "Zpětná vazba přeskočena"
       invitation_cannot_be_sent: "Pozvánka nemohla být odeslána"
@@ -1341,8 +1353,8 @@ cs:
     comment:
       wrote: "byl napsán"
       send_private_message: "Poslat soukromou zprávu uživateli %{person}"
-      delete: ~
-      are_you_sure: ~
+      delete: smazat
+      are_you_sure: "Jsi si jistý, že chces smazat tento komentář?"
     comment_form:
       ask_a_question: "Okomentujte inzerát nebo se zeptejte na více podrobností. Ostatní uživatelé Váš komentář uvidí."
       log_in: "přihlásit se"
@@ -1493,7 +1505,6 @@ cs:
       request_type: "Typ žádosti"
       requests: Žádosti
       rideshare: Spolujízda
-      search_verb: Hledat
       you_have_something_others_do_not: "Máte něco, co byste chtěli nabídnout?"
       feed_title: "%{listing_type} v %{service_name} %{optional_category}"
     left_panel_link:
@@ -1625,7 +1636,6 @@ cs:
       request_type: "Typ žádosti"
       requests: Žádosti
       rideshare: Spolujízda
-      search_verb: Hledat
       you_have_something_others_do_not: "Máte něco, co byste chtěli nabídnout?"
     please_comment: Komentář
   mercury:
@@ -1636,13 +1646,13 @@ cs:
   paypal_accounts:
     payout_info_title: "Informace o platbě"
     paypal_account_email_connected: "<del>Připojit se přes PayPal účet </del> Hotovo!"
-    payout_info_paypal: ~
+    payout_info_paypal: "%{service_name} používá PayPal jako poskytovatele platebních služeb. Aby bylo možné přijímat platby, je nutné vytvořit %{create_paypal_account_link} a propojit jej s %{service_name}."
     paypal_billing_agreement_made: "<del>%{service_name} opravňuje účtovat poplatek za transakce </del> Hotovo!"
-    commission_permission_needed: ~
-    create_paypal_account_link_text: ~
+    commission_permission_needed: "Aby bylo možné účtovat transakční poplatek, je ještě potřeba povolit přístup u %{service_name}"
+    create_paypal_account_link_text: "PayPal účet"
     connected_account: "Přihlášení k PayPal účtu %{email} proběhlo úspěšně."
     paypal_receive_funds_info_label_australia_only: ~
-    paypal_receive_funds_info_label: ~
+    paypal_receive_funds_info_label: "Aby mohl Tvůj PayPal účet přijímat platby, bude možná potřeba \"Business\" účet."
     paypal_receive_funds_info_australia_only: ~
     paypal_receive_funds_info: ~
     upgrade_paypal_account_link_text: ~
@@ -1688,8 +1698,8 @@ cs:
     change_account: "Změnit účet"
     missing: "Máte otevřené inzeráty, ale Váš PayPal účet není ještě nastaven k přijímání plateb. Připojte svůj PayPal účet a prověďte %{service_name} povolení zúčtovat transakční poplatek z Vašeho %{settings_link}."
     from_your_payment_settings_link_text: "nastavení plateb"
-    redirect_message: ~
-    redirect_link_text: ~
+    redirect_message: "Probíhá přesměrování na PayPal. Pokud se nic nestane, klikni %{redirect_link}"
+    redirect_link_text: zde
     paypal_account_all_set_up: ~
     can_receive_payments: ~
     paypal_account_connected_summary: ~
@@ -1794,16 +1804,6 @@ cs:
       following: "Přestat sledovat"
       follow: Sledovat
       unfollow: "Přestat sledovat"
-  search:
-    show:
-      all_results: "Všechny výsledky"
-      loading_more_search_results: "Načítání dalších výsledků vyhledávání"
-      offers: Nabídky
-      requests: Žádosti
-      search: Hledat
-      search_results: "Výsledky hledání"
-      search_returned_no_results: "Nebyly nalezeny žádné výsledky."
-      search_verb: Hledat
   sessions:
     new:
       create_new_account: "Vytvořit nový účet"
@@ -1834,8 +1834,11 @@ cs:
       confirm_your_email: "Prosíme, potvrďte Váš e-mail"
       account_confirmation_instructions: "Brzy obdržíte e-mail s odkazem a kliknutím na odkaz musíte potvrdit Vámi zadanou e-mailovou adresu. Po potvrzení Vašeho e-mailu se můžete připojit k %{service_name}."
       account_confirmation_instructions_title_admin: "Vítejte ve Vašem tržišti!"
-      your_marketplace_has_now_been_created: "Stránka Vašeho tržiště byla právě vytvořena. Bylo to jednoduché, že? Je tu ještě jeden další krok, který je třeba provést, než budete mít přístup na Vaši stránku: je třeba potvrdit Vaši e-mailovou adresu."
+      before_full_access_you_need_to_confirm_email: ~
+      before_confirmation_only_access_admin_dashboard: ~
+      admin_dashboard_link_text: ~
       account_confirmation_instructions_admin: "Brzy obdržíte e-mail s odkazem, na který budete muset kliknout, abyste potvrdili Vámi zadanou e-mailovou adresu. Po potvrzení Vaší e-mailové adresy můžete začít s nastavením Vašeho tržiště."
+      contact_support_link_text: ~
   settings:
     account:
       change: Změnit
@@ -1897,6 +1900,8 @@ cs:
       given_name: Jméno
       first_name_with_initial: "(pouze první písmeno se zobrazí uživatelům)"
       first_name_only: "(nezobrazuje se ostatním uživatelům)"
+      display_name: "Zobrazované jméno"
+      display_name_description: "V případě, že zastupuješ organizaci, je možné použít její jméno. Toto jméno bude pak zobrazeno ostatním uživatelům místo křestního jména a příjmení."
       location_description: "Můžete uvést přesnou adresu Vašeho bydliště nebo například pouze PSČ. Prosíme, uveďte alespoň PSČ. Adresu můžete také zadat na mapě níže.."
       phone_number: "Telefonní číslo"
       profile_picture: "Profilový obrázek"
@@ -2006,7 +2011,7 @@ cs:
       december: Pro
     today: Dnes
     clear: Určitě
-    format: mm/dd/yyyy
+    format: dd/mm/yyyy
   time:
     formats:
       short: "%e %b %Y v %H:%M"
@@ -2064,6 +2069,10 @@ cs:
     days: dny
   web:
     listings:
+      errors:
+        availability:
+          something_went_wrong: ~
+          saving_failed: ~
       pricing_units:
         piece: ~
         hour: ~
@@ -2071,11 +2080,20 @@ cs:
         night: ~
         week: ~
         month: ~
+      edit_availability_header: ~
+      save_and_close_availability_editing: ~
+      confirm_discarding_unsaved_availability_changes_explanation: ~
+      confirm_discarding_unsaved_availability_changes_question: ~
+      edit_listing_availability: ~
     no_listings:
       sorry: ~
       try_other_search_terms: ~
     listing_card:
+      add_picture: ~
       no_picture: ~
+    search:
+      page: ~
+      page_of_pages: ~
     topbar:
       menu: ~
       more: ~

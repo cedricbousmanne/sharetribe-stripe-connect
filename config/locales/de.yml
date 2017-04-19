@@ -94,6 +94,10 @@ de:
         favicon: Favicon
         favicon_info_text: "Das Favicon ersetzt das Standard Sharetribe Logo. Es sollte 32x32 Pixel groß sein. Hochgeladene Bilder werden auf diese Größe geändert."
         community_custom_color1: Hauptfarbe
+        community_slogan_color: "Farbe des Marktplatz-Slogans"
+        community_slogan_color_instructions_text: "Du kannst die Farbe des Slogans ändern, indem du den Hex-Wert einer Farbe eingibst. Der Slogan wird den nicht angemeldeten Benutzern angezeigt. %{colorpicker} kann dir helfen, die Farbe zu wählen und den Hex-Wert dieser Farbe zu bekommen. Danach kannst du den Hex-Wert hier kopieren. %{see_how_it_looks_like}."
+        community_description_color: "Farbe der Marktplatz-Beschreibung"
+        community_description_color_instructions_text: "Du kannst die Farbe der Beschreibung ändern, indem du den Hex-Wert einer Farbe eingibst. Die Beschreibung wird den nicht angemeldeten Benutzern angezeigt. %{colorpicker} kann dir helfen, die Farbe zu wählen und den Hex-Wert dieser Farbe zu bekommen. Danach kannst du den Hex-Wert hier kopieren. %{see_how_it_looks_like}."
         new_listing_button_custom_color: "Farbe der \"Neuen Eintrag erstellen\" Taste"
         logo_instructions_text_with_dimensions: "Die Größe des Desktop-Logos sollte %{width}x%{height}px betragen. Es wird Benutzern mit größeren Bildschirmen angezeigt."
         logo_instructions_text_with_dimensions_no_placing: ~
@@ -139,6 +143,7 @@ de:
         sender_name_placeholder: Absender
         sender_email_label: "Email Adresse"
         sender_email_placeholder: absender-email@beispiel.de
+        amazon_ses_notification: "Du wirst eine E-mail von %{email_sender} erhalten, für die Bestätigung deiner E-mail. Der Betreff von dieser E-mail ist '%{email_subject}'. Bitte folge die Anweisungen in dieser E-mail um deine E-mail-Adresse zu bestätigen."
         this_is_how_it_will_look: "So wird es aussehen:"
         send_verification_button: "Sende Verifizierungsmail"
         successfully_saved: "Absender Adresse erfolgreich gespeichert. Die Verifizierungsmail wird demnächst verschickt."
@@ -202,7 +207,6 @@ de:
         transaction_preferences: Auftragspräferenzen
         show_listing_publishing_date: "Datum der Veröffentlichung des Eintrags auf der Artikelseite darstellen"
         show_category_in_listing_list: "Die Art der Kategorien in der Übersicht darstellen"
-        hide_expiration_date: "Einträge müssen kein Ablaufdatum haben"
         listing_comments_in_use: "Benutzern erlauben, Einträge zu kommentieren (für alle anderen Benutzer sichtbar)"
         email_preferences: E-Mail-Einstellungen
         automatic_newsletters: "Automatisch tägliche / wöchentliche Newsletter an alle Benutzer versenden (es sei denn, sie melden sich ab)"
@@ -227,6 +231,7 @@ de:
         manage_members: "Benutzer verwalten"
         email: E-Mail
         name: Name
+        display_name: Anzeigename
         join_date: Beigetreten
         admin: Administrator
         posting_allowed: "Veröffentlichen von Einträgen erlaubt"
@@ -324,6 +329,9 @@ de:
       edit_location:
         edit_location_field: "Standort bearbeiten"
         this_field_is_required: "Dieses Feld ist erforderlich"
+      edit_expiration:
+        edit_expiration_field: "Eintragsfeld 'Ablaufdatum' bearbeiten"
+        enable: "Ablaufdatum aktivieren"
       form:
         field_required:
           this_field_is_required: "Dieses Feld ist erforderlich"
@@ -619,7 +627,7 @@ de:
       canceled_offer: "Angebot abgebrochen"
       message_from: "Nachricht von %{person}"
       about_listing: "In Bezug auf %{listing_title}"
-      free_message: Nachricht
+      free_message: "Direkte Nachricht"
       message_content_not_available: "Nachrichteninhalt nicht verfügbar"
     message:
       accepted_request: "Anfrage akzeptiert"
@@ -1896,6 +1904,8 @@ de:
       given_name: Vorname
       first_name_with_initial: "(anderen Benutzern wird nur der erste Buchstabe angezeigt)"
       first_name_only: "(wird anderen Benutzern nicht angezeigt)"
+      display_name: Anzeigename
+      display_name_description: "Wenn du eine Organisation vertretest, kannst du den Namen deiner Organisation als Anzeigename verwenden. Der Anzeigename wird den anderen Nutzern statt deiner Vor- und Nachnamen angezeigt."
       location_description: "Du kannst entweder deinen exakten Standort oder nur deine Postleitzahl angeben. Es ist eine gute Idee, das Land auch einzugeben. Beispiele: \"10117 Berlin, Deutschland\" oder \"2000 Sand Hill Road, CA, USA\"."
       phone_number: Telefonnummer
       profile_picture: Profilbild

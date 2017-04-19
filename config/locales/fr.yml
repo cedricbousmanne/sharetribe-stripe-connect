@@ -94,6 +94,10 @@ fr:
         favicon: Favicon
         favicon_info_text: "Le favicon remplacera celui par défaut dans Sharetribe. Les dimensions doivent être de 32x32 pixels et l'image téléchargée sera redimensionnée à ces dimensions."
         community_custom_color1: "Couleur principale"
+        community_slogan_color: "Couleur du slogan de la place de marché"
+        community_slogan_color_instructions_text: "Vous pouvez changer la couleur du slogan sur la page d'accueil en entrant une valeur hexadécimale. %{colorpicker} peut vous être utile pour choisir une couleur et obtenir sa valeur hexadécimale. Vous pourrez alors copier cette valeur ici. %{see_how_it_looks_like}."
+        community_description_color: "Couleur de la description de la place de marché"
+        community_description_color_instructions_text: "Vous pouvez changer la couleur de la description sur la page d'accueil en entrant une valeur hexadécimale. %{colorpicker} peut vous être utile pour choisir une couleur et obtenir sa valeur hexadécimale. Vous pourrez alors copier cette valeur ici. %{see_how_it_looks_like}."
         new_listing_button_custom_color: "Couleur du bouton Déposer une annonce"
         logo_instructions_text_with_dimensions: "Le logo doit avoir des dimensions de %{width}x%{height} pixels. Il sera affiché sur les grands écrans."
         logo_instructions_text_with_dimensions_no_placing: "Les dimensions du logo doivent être de %{width}*%{height} pixels."
@@ -104,8 +108,8 @@ fr:
         small_cover_photo_visibility: "La photo de couverture réduite est affichée sur toute les pages excepté sur la page d'accueil pour les visiteurs non connectés."
         small_cover_photo_instructions_text_with_dimensions: "La photo sera redimensionnée en %{width}x%{height} pixels et les images trop grandes seront coupées au centre."
         main_content_width: "Lorsque vous choisissez les photos de couverture, gardez à l'esprit que la page principale a une largeur maximale de %{main_width} pixels. N'oubliez pas non plus de vérifier comment s'affiche votre photo de couverture sur des petits écrans (par exemple en réduisant la taille de la fenêtre de votre navigateur)."
-        custom_color1_instructions_text: "Vous pouvez changer la couleur principale de l'interface en entrant une valeur hexadécimale. <a href=\"http://www.colorpicker.com/?colorcode=D96E21\" target=\"_blank\" rel=\"noreferrer\">ColorPicker.com</a> peut vous aider à choisir cette valeur que pourrez alors copier ici."
-        new_listing_button_instructions_text: "Vous pouvez changer la couleur du bouton Déposer une nouvelle annonce en entrant une valeur hexadécimale. %{link_to_colorpicker} peut vous aider à choisir cette valeur que pourrez alors copier ici."
+        custom_color1_instructions_text: "Vous pouvez changer la couleur principale de l'interface en entrant une valeur hexadécimale. <a href=\"http://www.colorpicker.com/?colorcode=D96E21\" target=\"_blank\" rel=\"noreferrer\">ColorPicker.com</a> peut vous être utile pour choisir une couleur et obtenir sa valeur hexadécimale. Vous pourrez alors copier cette valeur ici."
+        new_listing_button_instructions_text: "Vous pouvez changer la couleur du bouton Déposer une nouvelle annonce en entrant une valeur hexadécimale. %{link_to_colorpicker} peut vous être utile pour choisir une couleur et obtenir sa valeur hexadécimale. Vous pourrez alors copier cette valeur ici."
         default_browse_view: "Vue par défaut"
         default_browse_view_instructions_text: "La vue par défaut est utilisée sur la page d'accueil pour définir comment sont affichées les annonces par défaut."
         grid: Grille
@@ -139,6 +143,7 @@ fr:
         sender_name_placeholder: "Nom de l'expéditeur"
         sender_email_label: "Adresse email"
         sender_email_placeholder: expediteur@exemple.fr
+        amazon_ses_notification: "Vous recevrez un message de %{email_sender} pour confirmer votre adresse email. Le sujet de cet email sera \"%{email_subject}\". Veuillez suivre les instructions qu'il contient pour vérifier votre adresse."
         this_is_how_it_will_look: "Voici un aperçu du résultat : "
         send_verification_button: "Envoyer l'email de vérification"
         successfully_saved: "Adresse de l'expéditeur sauvegardée avec succès. L'email de vérification va être envoyé très prochainement."
@@ -202,7 +207,6 @@ fr:
         transaction_preferences: "Paramètres de commandes"
         show_listing_publishing_date: "Afficher la date de publication de l'annonce sur la page de l'annonce"
         show_category_in_listing_list: "Afficher les types de transaction dans la vue liste"
-        hide_expiration_date: "Ne pas demander de date d'expiration pour les annonces"
         listing_comments_in_use: "Permettre aux utilisateurs de commenter les annonces (visibles par tous les utilisateurs)"
         email_preferences: "Paramètres d'email"
         automatic_newsletters: "Envoyer l'email quotidien/hebdomadaire automatique à tous les utilisateurs (sauf s'ils se désabonnent)"
@@ -227,6 +231,7 @@ fr:
         manage_members: "Gérer les utilisateurs"
         email: Email
         name: Nom
+        display_name: "Nom d'affichage"
         join_date: "Date d'inscription"
         admin: Administrateur
         posting_allowed: "Dépôt d'annonce autorisé"
@@ -244,6 +249,7 @@ fr:
         enabled_for_you: "Activé pour vous"
         enabled_for_all: "Activé pour tous"
         new_topbar: "Nouvelle barre des menus (visible sur toute les pages)"
+        searchpage: "Nouvelle page de recherche (nouvelle barre des menus requise)"
       social_media:
         social_media: "Réseaux sociaux"
         twitter_handle: "Nom Twitter"
@@ -324,6 +330,9 @@ fr:
       edit_location:
         edit_location_field: "Modifier le champ d'annonce 'Lieu'"
         this_field_is_required: "Ce champ est obligatoire"
+      edit_expiration:
+        edit_expiration_field: "Modifier le champ d'annonce 'Date d'expiration'"
+        enable: "Activer la date d'expiration"
       form:
         field_required:
           this_field_is_required: "Rendre ce champ obligatoire lors de la création d'une nouvelle annonce"
@@ -392,8 +401,8 @@ fr:
       pricing_units_disabled_info: "Les unités de prix ne peuvent être utilisées lorsque le calendrier de disponibilité est activé."
       index:
         listing_shapes: "Types de transaction"
-        description: "Les types de transaction déterminent comment le processus de transaction fonctionne sur votre site. Vous pouvez choisir de permettre à vos utilisateurs de louer ou vendre, ou même de simplement publier des informations et de communiquer sans paiement."
-        read_more_about_order_types: "En apprendre plus sur les types de transaction"
+        description: "Les types de transaction déterminent comment le processus de transaction fonctionne sur votre site. Vous pouvez choisir de permettre à vos utilisateurs de louer ou vendre, ou même de simplement publier des informations et de communiquer directement."
+        read_more_about_order_types: "En savoir plus sur les types de transaction"
         add_new_shape: "Ajouter un nouveau type de transaction : "
         select_template: "Sélectionner un modèle..."
         all_categories: "Toutes les catégories"
@@ -477,14 +486,16 @@ fr:
     paypal_accounts:
       marketplace_paypal_integration: "Paramètres du système de paiements"
       preferences_updated: "Préférences du système de paiements mises à jour"
-      marketplace_currency_used: "Cette place de marché utilise %{currency} comme devise. Pour changer la devise, %{contact_support_link}."
       contact_support_link_text: "contactez le support Sharetribe"
       integration_info_text: "Le système de paiement de votre place de marché est propulsé par PayPal. Pour permettre à vos utilisateurs de réaliser des paiements au sein de votre place de marché, vous devez connecter votre compte PayPal. Une fois connecté, vous pourrez choisir un montant minimal pour les transactions et éventuellement vos frais de service."
       link_paypal_personal_account_label: "Proposez-vous vous aussi vos produits ou services ?"
       link_paypal_personal_account: "Dans ce cas, vous devez également connecter votre compte PayPal depuis %{personal_payment_preferences_link}."
       personal_payment_preferences_link_text: "votre compte personnel"
       read_more_about_paypal: "En savoir plus sur le système de paiement."
-      set_minimum_price_and_fee: "Définir un montant minimum et les frais de service"
+      edit_payment_settings: "Modifier les paramètres de paiements"
+      supported_currencies_information_text: "Le système de paiement de Sharetribe gère 24 devises. Si votre devise n'est pas dans la liste, veuillez %{contact_support_link}. Si vous modifier la devise de votre place de marché, les annonces existantes conserveront l'ancienne devise. Vous devrez éditer ces annonces une à une pour les convertir à la nouvelle devise."
+      currency_change_warning_text: "Un conseil : si vous appliquez ce changement de devise, n'oubliez pas de demander à vos vendeurs d'éditer manuellement leurs annonces existantes pour mettre à jour la devise."
+      marketplace_currency_label: "Devise de la place de marché : "
       minimum_listing_price_label: "Montant minimal de transaction : "
       transaction_fee_label: "Frais de service : "
       minimum_transaction_fee_label: "Frais minimaux de transaction : "
@@ -617,7 +628,7 @@ fr:
       canceled_offer: "Offre annulée."
       message_from: "Message de %{person}"
       about_listing: "A propos de l'annonce %{listing_title}"
-      free_message: "Message libre"
+      free_message: "Message direct"
       message_content_not_available: "Le contenu du message n'est pas disponible"
     message:
       accepted_request: "a accepté la demande"
@@ -777,7 +788,7 @@ fr:
       we_have_marked_request_as_confirmed: "Nous avons signalé la commande à propos de '%{request}' comme terminée. La commande a été terminée automatiquement car %{days_passed} se sont écoulés depuis que la demande a été acceptée."
     booking_transaction_automatically_confirmed:
       subject: "Commande automatiquement signalée comme terminée - n'oubliez pas de donner un avis"
-      we_have_marked_request_as_confirmed: "Nous avons signalé la commande à propos de '%{request}' comme réalisée. La demande a été réalisée automatiquement car une journée s'est écoulée depuis la fin de la période de réservation."
+      we_have_marked_request_as_confirmed: "Nous avons signalé la commande à propos de '%{request}' comme réalisée. La demande a été automatiquement réalisée car une journée s'est écoulée depuis la fin de la période de réservation."
     automatically_confirmed_footer:
       giving_feedback_is_good_idea: "Vous pouvez désormais donner un avis sur %{other_party_given_name}. Donner un avis est toujours une bonne idée. Si tout s'est bien passé, vous devriez signaler aux autres que %{other_party_given_name} est quelqu'un de confiance. S'il y a eu un problème, c'est aussi une bonne chose de le mentionner."
       give_feedback_to: "Donner un avis sur %{other_party_given_name}"
@@ -844,9 +855,9 @@ fr:
       you_have_made_new_payment: "Vous avez payé <b>%{payment_sum}</b> pour <b>%{listing_title}</b> à %{recipient_full_name}. Voici un reçu du paiement."
       product: Produit
       price_per_unit_type: "Prix par %{unit_type}"
-      duration: "Durée : "
-      quantity: "Quantité : "
-      subtotal: "Sous-total : "
+      duration: Durée
+      quantity: Quantité
+      subtotal: Sous-total
       total: Total
       price: Prix
       service_fee: "Frais de service"
@@ -925,6 +936,7 @@ fr:
     transaction_agreement:
       required_error: "Vous devez accepter l'accord"
     paypal:
+      transaction_cannot_complete: "La transaction n'a pas pu être réalisée. Ceci est probablement dû au fait que votre banque n'a pas autorisé l'utilisation de votre carte bancaire. Veuillez essayer de nouveau en utilisant une autre méthode de paiement."
       buyer_cannot_pay_error: "Le paiement a été refusé par PayPal. Veuillez contacter leur support client pour obtenir plus d'informations : %{customer_service_link}"
       pending_review_error: "Le paiement a été soumis mais a été marqué par PayPal comme 'nécessitant une validation'. Quand cette validation sera confirmée par PayPal, le paiement sera automatiquement autorisé."
       seller_express_checkout_disabled: "PayPal Express Checkout a été désactivé pour le compte PayPal de l'auteur de cette annonce. Veuillez contacter l'auteur pour lui signaler qu'il y a un problème avec son compte PayPal et lui conseiller de contacter le service client PayPal."
@@ -1088,7 +1100,7 @@ fr:
       add_email_addresses_description: "Ajoutez ci-dessous les adresses email des gens que vous souhaitez inviter. Pour ajouter plusieurs adresses, séparez les par une virgule."
       add_lots_of_email_addresses: "Puisque vous êtes administrateur, voici un conseil : si vous souhaitez envoyer de nombreuses invitations, vous devriez utiliser un outil d'emailing. Lisez %{this_article_link} pour découvrir plusieurs services qui pourront répondre à ce besoin."
       this_article_link: "cet article"
-      invitation_emails_field_placeholder: "ami1@exemple.fr, ami2@exemple.fr, ..."
+      invitation_emails_field_placeholder: "ami1@example.com, ami2@example.com, ..."
       invitation_message_field_placeholder: "J'ai rejoint cette super place de marché. Tu devrais aussi !"
       errors_in_emails: "Vérifiiez que les adresses email que vous avez ajoutées sont valides et ne comportent pas de caractères interdits. Si vous avez ajouté plusieurs adresses, assurez-vous qu'elles soient séparées par une virgule."
     list_item:
@@ -1148,7 +1160,7 @@ fr:
       feedback: "Contacter l'équipe %{service_name}"
     application:
       join_this_community: "Rejoindre la place de marché"
-      read_more: "Lire la suite"
+      read_more: "En savoir plus"
       feedback: "Votre message pour l'équipe %{service_name}"
       dont_use_to_contact_support: "Nous avons remarqué que vous êtes un administrateur de %{service_name}. Ce formulaire est celui que vos utilisateur utilisent pour vous contacter. Vous ne pouvez pas utiliser ce formulaire pour contacter le support Sharetribe. Vous pouvez cependant le faire via le lien Support dans votre panneau d'administration."
       feedback_forum: "forum de discussion"
@@ -1271,7 +1283,7 @@ fr:
       poll_update_failed: "Erreur lors de la mise à jour du sondage"
       poll_updated: "Sondage mis à jour"
       poll_deleted: "Sondage supprimé"
-      read_more: "Lire la suite !"
+      read_more: "En savoir plus !"
       registration_considered_spam: "L'inscription n'a pas fonctionné, veuillez nous contacter depuis le menu en précisant le message \"email2 error\"."
       reply_cannot_be_empty: "Vous ne pouvez pas envoyer un message vide"
       reply_sent: "Message envoyé avec succès"
@@ -1425,7 +1437,7 @@ fr:
         long_time: "semaine, mois..."
         after_service_fee_you_will_get: "Après les frais de service de %{service_name} et du prestataire de paiement vous recevrez %{sum_with_currency}"
         no_service_fee_you_will_get_paypal_text: "%{paypal_fee_info_link} seront déduits du montant."
-        after_service_fee_you_will_get_paypal_text: "Les frais de %{service_name} (%{sum_with_currency}) et %{paypal_fee_info_link} seront déduits du montant."
+        after_service_fee_you_will_get_paypal_text: "Lorsque quelqu'un passera commande, les frais de service de %{service_name} (%{sum_with_currency}) et %{paypal_fee_info_link} seront déduits du montant."
         paypal_fee_info_link_text: "les frais de transaction PayPal"
         delivery: Livraison
         shipping: Envoi
@@ -1488,7 +1500,6 @@ fr:
       request_type: "Type de demande"
       requests: Demandes
       rideshare: Covoiturage
-      search_verb: Rechercher
       you_have_something_others_do_not: "Vous avez quelque chose à offrir ?"
       feed_title: "%{listing_type} sur %{service_name} %{optional_category}"
     left_panel_link:
@@ -1571,8 +1582,8 @@ fr:
         per_day: "par jour"
       delivery: Livraison
       shipping: "Envoi (+%{price})"
-      shipping_no_price: Livraison
-      shipping_price_additional: "Livraison (+%{price}, éléments supplémentaires: +%{shipping_price_additional})"
+      shipping_no_price: Envoi
+      shipping_price_additional: "Envoi (+%{price}, éléments supplémentaires : +%{shipping_price_additional})"
       pickup: Retrait
       pickup_no_price: Retrait
       youtube_video_player: "lecteur vidéo YouTube"
@@ -1620,7 +1631,6 @@ fr:
       request_type: "Type de demande"
       requests: Demandes
       rideshare: Covoiturage
-      search_verb: Rechercher
       you_have_something_others_do_not: "Vous avez quelque chose à offrir ?"
     please_comment: Commentaire
   mercury:
@@ -1638,9 +1648,9 @@ fr:
     connected_account: "Le compte PayPal '%{email}' est désormais connecté."
     paypal_receive_funds_info_label_australia_only: "Votre compte PayPal doit permettre de recevoir des paiements. Cela peut nécessiter un compte Premier ou Business."
     paypal_receive_funds_info_label: "Votre compte PayPal doit permettre la réception de paiements. Cela nécessite un compte Business."
-    paypal_receive_funds_info_australia_only: "Si vous voyez une erreur en essayant de connecter votre compte à %{service_name}, vous pouvez soit surclassez votre compte PayPal en %{upgrade_paypal_account_link} ou (si vous êtes un particulier), créer un nouvea compte Premier. Ces deux types de comptes sont entièrement gratuits."
-    paypal_receive_funds_info: "Si vous voyez une erreur en essayant de connecter votre compte à %{service_name}, surclassez votre compte PayPal en %{upgrade_paypal_account_link}. C'est simple et gratuit. Si vous êtes un particulier, PayPal recommande d'utiliser votre nom comme nom Business ou Entreprise."
-    upgrade_paypal_account_link_text: "vous connectant et cliquant sur le lien de surclassement"
+    paypal_receive_funds_info_australia_only: "Si vous voyez une erreur en essayant de connecter votre compte à %{service_name}, soit %{upgrade_paypal_account_link} ou (si vous êtes un particulier), créer un nouveau compte Premier. Ces deux types de comptes sont entièrement gratuits."
+    paypal_receive_funds_info: "Si vous voyez une erreur en essayant de connecter votre compte à %{service_name}, %{upgrade_paypal_account_link}. C'est simple et gratuit. Si vous êtes un particulier, PayPal recommande d'utiliser votre nom comme nom Business ou Entreprise."
+    upgrade_paypal_account_link_text: "connectez vous et surclassez votre compte PayPal en un compte Business"
     admin_account_not_connected: "Utiliser le système de paiement de %{service_name} pour recevoir des paiements est impossible tant que celui-ci n'a pas été activé. Veuillez %{contact_admin_link} pour en savoir plus."
     contact_admin_link_text: "contacter l'administrateur de la place de marché"
     you_are_ready_to_accept_payments: "Vous pouvez désormais recevoir des paiements !"
@@ -1776,7 +1786,7 @@ fr:
       no_reviews: "Aucun avis"
       show_all_listings: "Voir toutes les annonces"
       show_all_open_listings: "Voir toutes les annonces en ligne"
-      show_all_reviews: "Vois tous les avis"
+      show_all_reviews: "Voir tous les avis"
     followed_people:
       you_follow_plural: "Vous suivez %{count} personnes"
       you_follow_singular: "Vous suivez %{count} personne"
@@ -1788,16 +1798,6 @@ fr:
       following: Suivi(e)
       follow: Suivre
       unfollow: "Ne plus suivre"
-  search:
-    show:
-      all_results: "Tous les résultats"
-      loading_more_search_results: "Chargement de plus de résultats de recherche"
-      offers: Offres
-      requests: Demandes
-      search: Recherche
-      search_results: "Résultats de recherche"
-      search_returned_no_results: "Pas de résultats à votre recherche."
-      search_verb: Rechercher
   sessions:
     new:
       create_new_account: "Créer un nouveau compte"
@@ -1827,9 +1827,12 @@ fr:
       change_email: Modifier
       confirm_your_email: "Veuillez confirmer votre email"
       account_confirmation_instructions: "Vous allez bientôt recevoir un email contenant un lien que vous devrez suivre pour confirmer votre adresse email. N'oubliez pas de vérifier votre dossier \"Spam\" ou \"Indésirables\" ! Dès que vous l'aurez confirmée, vous pourrez rejoindre %{service_name}."
-      account_confirmation_instructions_title_admin: "Bienvenue sur votre place de marché !"
-      your_marketplace_has_now_been_created: "Votre place de marché a été créée. C'était simple, non ? Il ne reste qu'une étape pour que vous puissiez y accéder : vous devez confirmer votre adresse email."
-      account_confirmation_instructions_admin: "Vous allez bientôt recevoir un email contenant un lien que vous devrez suivre pour confirmer l'adresse email que vous avez saisie. N'oubliez pas de vérifier votre dossier \"Spam\" ou \"Indésirables\" ! En cliquant sur ce lien vous pourrez commencer à configurer votre place de marché."
+      account_confirmation_instructions_title_admin: "Confirmez votre adresse email"
+      before_full_access_you_need_to_confirm_email: "Avant que nous vous donnions un accès complet à votre place de marché, il n'y a plus qu'une petite chose à faire : confirmer votre adresse email."
+      before_confirmation_only_access_admin_dashboard: "Avant la confirmation vous ne pouvez accéder qu'au %{admin_dashboard_link}."
+      admin_dashboard_link_text: "panneau d'administration"
+      account_confirmation_instructions_admin: "Vous devriez avoir reçu un email à %{email_address} contenant un lien de confirmation. Si vous le ne voyez pas, vérifiez votre dossier spam ou cliquez sur le bouton ci-dessous pour l'envoyer de nouveau. Une fois arrivée, ouvrez le lien qu'il contient pour confirmer votre adresse, après quoi vous aurez un accès complet à votre place de marché. Si vous avez besoin d'aide, n'hésitez pas à %{support_link}."
+      contact_support_link_text: "contacter le support Sharetribe"
   settings:
     account:
       change: Changer
@@ -1891,6 +1894,8 @@ fr:
       given_name: Prénom
       first_name_with_initial: "(seule la première lettre est visible par les autres utilisateurs)"
       first_name_only: "(non visible par les autres utilisateurs)"
+      display_name: "Nom d'affichage"
+      display_name_description: "Si vous êtes une entreprise, vous pouvez utiliser son nom comme nom d'affichage. Le nom d'affichage sera visible par les autres utilisateurs à la place de votre nom et prénom."
       location_description: "Vous pouvez entrer votre adresse ou simplement une ville ou un code postal. Il est également utile de préciser votre pays lorsque vous entrez votre adresse. Exemples : \"10117 Berlin, Allemagne\" ou \"2000 Sand Hill Road, CA, USA\"."
       phone_number: "Numéro de téléphone"
       profile_picture: "Photo de profil"
@@ -2059,6 +2064,10 @@ fr:
     days: jours
   web:
     listings:
+      errors:
+        availability:
+          something_went_wrong: "Nous ne sommes pas en mesure d'afficher les informations de disponibilités. Essayez de recharger la page."
+          saving_failed: "Nous ne sommes pas en mesure de sauvegarder les changements de disponibilités. Essayez de recharger la page."
       pricing_units:
         piece: unité
         hour: heure
@@ -2066,11 +2075,20 @@ fr:
         night: nuit
         week: semaine
         month: mois
+      edit_availability_header: Disponibilité
+      save_and_close_availability_editing: "Sauvegarder et fermer"
+      confirm_discarding_unsaved_availability_changes_explanation: "Vous avez des modifications non sauvegardées pour vos informations de disponibilités. Si vous continuez, ces changements seront perdus."
+      confirm_discarding_unsaved_availability_changes_question: "Etes-vous sûr de vouloir annuler vos modifications ?"
+      edit_listing_availability: "Editer la disponibilité de l'annonce"
     no_listings:
       sorry: "Désolé, aucune annonce n'a pu être trouvée avec vos critères de recherche."
       try_other_search_terms: "Essayez peut-être avec d'autres termes ?"
     listing_card:
+      add_picture: "Ajouter une image"
       no_picture: "Aucune image"
+    search:
+      page: Page
+      page_of_pages: "sur %{total_number_of_pages}"
     topbar:
       menu: Menu
       more: Plus

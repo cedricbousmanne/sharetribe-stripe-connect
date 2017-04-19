@@ -89,6 +89,10 @@ th-TH:
         favicon: Favicon
         favicon_info_text: "Favicon จะแทนที่โลโก้เริ่มต้นของ Sharetribe  ขนาดควรจะเป็น 32x32 พิกเซล ภาพ ที่อัปโหลดจะถูกปรับขนาดเท่านี้"
         community_custom_color1: สีหลัก
+        community_slogan_color: ~
+        community_slogan_color_instructions_text: ~
+        community_description_color: ~
+        community_description_color_instructions_text: ~
         new_listing_button_custom_color: ~
         logo_instructions_text_with_dimensions: "โลโก้ควรมีขนาด %{width}x %{height} px ซึ่งจะแสดงต่อผู้ใช้ที่มีหน้าจอขนาดใหญ่"
         logo_instructions_text_with_dimensions_no_placing: ~
@@ -134,6 +138,7 @@ th-TH:
         sender_name_placeholder: ~
         sender_email_label: ~
         sender_email_placeholder: ~
+        amazon_ses_notification: ~
         this_is_how_it_will_look: ~
         send_verification_button: ~
         successfully_saved: ~
@@ -197,7 +202,6 @@ th-TH:
         transaction_preferences: การตั้งค่าการสั่งซื้อสินค้า
         show_listing_publishing_date: แสดงวันที่เผยแพร่รายการในหน้ารายการ
         show_category_in_listing_list: แสดงประเภทรายการในรูปแบบรายการ
-        hide_expiration_date: ไม่จำเป็นต้องบังคับให้รายการมีวันหมดอายุ
         listing_comments_in_use: "ให้สิทธิผู้ใช้ในการแสดงความคิดเห็นแก่รายการ (ผู้ใช้อื่น ๆ ทั้งหมดสามารถดูได้)"
         email_preferences: การกำหนดค่าอีเมล์
         automatic_newsletters: "ส่งจดหมายข่าวรายวัน / สัปดาห์โดยอัตโนมัติไปยังผู้ใช้ทั้งหมด (ยกเว้นกรณีที่พวกเขา เลือกที่จะไม่รับ)"
@@ -222,6 +226,7 @@ th-TH:
         manage_members: จัดการผู้ใช้
         email: อีเมล์
         name: ชื่อ
+        display_name: ~
         join_date: เข้าร่วมแล้ว
         admin: ผู้ดูแลระบบ
         posting_allowed: การโพสต์ที่ได้รับอนุญาต
@@ -319,6 +324,9 @@ th-TH:
       edit_location:
         edit_location_field: แก้ไขข้อมูลตำแหน่ง
         this_field_is_required: ข้อมูลนี้จำเป็น
+      edit_expiration:
+        edit_expiration_field: ~
+        enable: ~
       form:
         field_required:
           this_field_is_required: บังคับให้กรอกข้อมูลในช่องนี้เมื่อมีการสร้างรายการใหม่
@@ -1873,6 +1881,8 @@ th-TH:
       given_name: ชื่อ
       first_name_with_initial: (แสดงเฉพาะอักษรตัวแรกให้ผู้ใช้งานคนอื่นเห็น)
       first_name_only: "(ไม่แสดงต่อผู้ใช้อื่น ๆ)"
+      display_name: ~
+      display_name_description: ~
       location_description: "คุณสามารถให้ทั้งที่อยู่ หรือเฉพาะเมือง หรือเฉพาะรหัสไปรษณีย์ของคุณ จะเป็นการดีที่จะเพิ่มประเทศของคุณ ในขณะที่เพิ่มตำแหน่งของคุณ ตัวอย่าง: \"10117 Berlin, Germany\" หรือ \" 2000 Sand Hill Road, CA, USA \""
       phone_number: หมายเลขโทรศัพท์
       profile_picture: รูปโปรไฟล์

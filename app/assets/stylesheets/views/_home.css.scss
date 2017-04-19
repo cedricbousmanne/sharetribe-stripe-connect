@@ -321,7 +321,7 @@ $home-list-avatar-padding: lines(0.25);
     font-size: 18px;
   }
   @include media(large-mobile) {
-    font-size: 36px;
+    font-size: em(24);
     & > .smaller {
       font-size: 24px;
     }
@@ -347,14 +347,14 @@ $home-list-avatar-padding: lines(0.25);
 
 .home-list-item-price-value,
 .browsing-list-item-price-value {
-  font-size: em(44);
+  font-size: em(32);
   line-height: 1;
   font-weight: 400;
 }
 
 .home-list-listing-shape-value,
 .browsing-list-item-listing-shape-value {
-  font-size: em(32);
+  font-size: em(24);
   line-height: 1;
   font-weight: 400;
 }

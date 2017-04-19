@@ -94,6 +94,10 @@ sv:
         favicon: Favicon
         favicon_info_text: "Favicon kommer att ersätta Sharetribes standardlogotyp. Dimensionerna ska vara 32x32 pixlar och den uppladdade bilden kommer att skalas till den dimensionen."
         community_custom_color1: Huvudfärg
+        community_slogan_color: ~
+        community_slogan_color_instructions_text: ~
+        community_description_color: ~
+        community_description_color_instructions_text: ~
         new_listing_button_custom_color: ~
         logo_instructions_text_with_dimensions: "Desktoplogotypens storlek ska vara %{width}x%{height}px. Den kommer att visas för användare med större skärm."
         logo_instructions_text_with_dimensions_no_placing: ~
@@ -139,6 +143,7 @@ sv:
         sender_name_placeholder: Avsändarnamn
         sender_email_label: E-postadress
         sender_email_placeholder: dinmail@exempel.com
+        amazon_ses_notification: ~
         this_is_how_it_will_look: "Så här kommer det se ut:"
         send_verification_button: "Skicka verifikationsmail"
         successfully_saved: "Avsändaradress sparades korrekt. Verifikationsmailet kommer att skickas snart."
@@ -202,7 +207,6 @@ sv:
         transaction_preferences: Transaktionsinställningar
         show_listing_publishing_date: "Visa publiceringsdatum på annonsen på annonssidan"
         show_category_in_listing_list: "Visa annonstyp på annonssidan"
-        hide_expiration_date: "Kräv inte att annonser har ett utgångsdatum"
         listing_comments_in_use: "Tillåt att användare kan skriva kommentarer till annonser (detta visas för alla andra användare)."
         email_preferences: E-postinställningar
         automatic_newsletters: "Skicka automatiskt dagliga/veckovis nyhetsbrev till alla användare (såvida de inte vill)"
@@ -227,6 +231,7 @@ sv:
         manage_members: "Hantera användare"
         email: E-post
         name: Namn
+        display_name: ~
         join_date: Anslöt
         admin: Admin
         posting_allowed: "Inlägg tillåtet"
@@ -324,6 +329,9 @@ sv:
       edit_location:
         edit_location_field: "Redigera platsfält"
         this_field_is_required: "Detta fält måste fyllas i"
+      edit_expiration:
+        edit_expiration_field: ~
+        enable: ~
       form:
         field_required:
           this_field_is_required: "Detta fält måste fyllas i"
@@ -1889,6 +1897,8 @@ sv:
       given_name: Förnamn
       first_name_with_initial: "(bara första bokstaven visas för andra användare)"
       first_name_only: "(visas inte för andra användare)"
+      display_name: ~
+      display_name_description: ~
       location_description: "Du kan antingen ange din exakta position eller t ex bara ditt postnummer. Lägg minst till ditt postnummer. Du kan också välja en plats på kartan nedan."
       phone_number: Telefonnummer
       profile_picture: Profilbild

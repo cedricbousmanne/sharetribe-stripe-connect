@@ -154,7 +154,7 @@ ul {
   margin-top: lines(0.25);
 
   textarea {
-    height: lines(5);
+    min-height: lines(5);
   }
 }
 
@@ -1095,7 +1095,7 @@ $noscript-height: lines(4);
 
       textarea {
         width: 95%;
-        height: lines(4);
+        min-height: lines(4);
       }
 
     }
@@ -1122,7 +1122,7 @@ $noscript-height: lines(4);
       .comment-form {
         textarea {
           width: 100%;
-          height: lines(6);
+          min-height: lines(6);
         }
       }
     }
@@ -1909,7 +1909,6 @@ $network-green: #00a26c;
 
 .coverimage {
   position: relative;
-  max-width: em(1920);
   margin-left: auto;
   margin-right: auto;
 }
@@ -1966,7 +1965,6 @@ figure.fluidratio {
   .coverimage-fade {
     position: absolute;
     top: lines(0);
-    max-width: em(1920);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1985,8 +1983,7 @@ figure.fluidratio {
   }
 
   .marketplace-lander-content {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 5em 1em;
     text-align: center;
   }
 
@@ -1995,7 +1992,7 @@ figure.fluidratio {
     margin-top: 0;
     position: relative;
     padding: 0;
-    color: $background;
+    color: $slogancolor;
     @include larger-type;
     line-height: em(18);
     @include media(tablet) {
@@ -2003,6 +2000,10 @@ figure.fluidratio {
       @include huge-type;
       line-height: em(15);
     }
+  }
+
+  .marketplace-lander-content-description {
+      color: $descriptioncolor;
   }
 
   .title-container {

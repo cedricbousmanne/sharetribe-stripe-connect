@@ -16,9 +16,39 @@ This file follows the best practices from [keepachangelog.com](http://keepachang
 
 ### Removed
 
+- Removed default twitter handle [#2906](https://github.com/sharetribe/sharetribe/pull/2906)
+
 ### Fixed
 
+- Fix cropped cover photo in big screens [#2895](https://github.com/sharetribe/sharetribe/pull/2895)
+- Add missing padding to homepage search field in mobile view [#2895](https://github.com/sharetribe/sharetribe/pull/2895)
+- Fix unwanted scrolling in listing page by removing comment text area auto focus [#2917](https://github.com/sharetribe/sharetribe/pull/2917)
+
 ### Security
+
+## [6.2.0] - 2017-03-09
+
+### Added
+
+- Add support for redis as cache store [#2786](https://github.com/sharetribe/sharetribe/pull/2786)
+- Add support for using PayPal in fake mode for development purposes. [Read more](./docs/using-fakepal.md) [#2598](https://github.com/sharetribe/sharetribe/pull/2598)
+- Add support for linking to member invitation page in CLP [#2859](https://github.com/sharetribe/sharetribe/pull/2859)
+- New feature: Hide irrelevant search filters when a category or subcategory is selected [#2882](https://github.com/sharetribe/sharetribe/pull/2882)
+- Landing page Markdown support [#2887](https://github.com/sharetribe/sharetribe/pull/2887)
+- Add instructions how to configure Harmony service [#2892](https://github.com/sharetribe/sharetribe/pull/2892)
+- Add support for display name [#2869](https://github.com/sharetribe/sharetribe/pull/2869)
+- Add support for customizing community description and slogan color [#2898](https://github.com/sharetribe/sharetribe/pull/2898)
+
+### Changed
+
+- Redirect user to the page where user was before login/sign up [#2758](https://github.com/sharetribe/sharetribe/pull/2758)
+- Updated NPM packages [#2762](https://github.com/sharetribe/sharetribe/pull/2762)
+
+### Fixed
+
+- Fixed broken transaction button styles [#2723](https://github.com/sharetribe/sharetribe/pull/2723)
+- Fixed number of issues in the Order Types form [#2858](https://github.com/sharetribe/sharetribe/pull/2858)
+- Fixed an issue which caused sign up to fail partially if the Facebook profile picture upload failed [#2886](https://github.com/sharetribe/sharetribe/pull/2886)
 
 ## [6.1.0] - 2016-10-31
 
@@ -322,7 +352,8 @@ This file follows the best practices from [keepachangelog.com](http://keepachang
 
 For older releases, see [RELEASE_NOTES.md](https://github.com/sharetribe/sharetribe/blob/v5.0.0/RELEASE_NOTES.md).
 
-[Unreleased]: https://github.com/sharetribe/sharetribe/compare/v6.1.0...HEAD
+[Unreleased]: https://github.com/sharetribe/sharetribe/compare/v6.2.0...HEAD
+[6.2.0]: https://github.com/sharetribe/sharetribe/compare/v6.1.0...v6.2.0
 [6.1.0]: https://github.com/sharetribe/sharetribe/compare/v6.0.0...v6.1.0
 [6.0.0]: https://github.com/sharetribe/sharetribe/compare/v5.12.0...v6.0.0
 [5.12.0]: https://github.com/sharetribe/sharetribe/compare/v5.11.0...v5.12.0
