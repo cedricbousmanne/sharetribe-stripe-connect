@@ -15,13 +15,23 @@ namespace :assets do
   task compile_environment: :webpack do
     Rake::Task["assets:environment"].invoke
   end
-
   desc "Compile assets with webpack"
   task :webpack do
-    sh "cd client && npm run build:client"
+    # => prefix commands with /tmp/amplo/nvm-exec.sh on AWS servers
+    # => http://stackoverflow.com/questions/41174807/capistrano-deploy-fails-with-react-on-rails-when-npm-is-installed-via-nvm
+    nvm_prefix = '/tmp/city-commerces.com/nvm-exec.sh' if File.exist?('/tmp/city-commerces.com/nvm-exec.sh')
+    sh "cd client && #{nvm_prefix} npm install"
+    sh "cd client && #{nvm_prefix} npm run build:client"
+    sh "cd client && #{nvm_prefix} npm run build:server"
+  end
+  desc "Compile assets with webpack"
+  task :webpack do
+    nvm_prefix = '/tmp/city-commerces.com/nvm-exec.sh' if File.exist?('/tmp/city-commerces.com/nvm-exec.sh')
+    
+    sh "cd client && #{nvm_prefix} npm run build:client"
 
     # Skip next line if not doing server rendering
-    sh "cd client && npm run build:server"
+    sh "cd client && #{nvm_prefix} npm run build:server"
   end
 
   task :clobber do
