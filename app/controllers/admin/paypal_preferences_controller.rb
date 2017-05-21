@@ -1,4 +1,4 @@
-class Admin::PaypalPreferencesController < Admin::AdminBaseController
+class Admin::PaypalPreferencesController < ApplicationController
 
   before_filter :ensure_paypal_provisioned
 
