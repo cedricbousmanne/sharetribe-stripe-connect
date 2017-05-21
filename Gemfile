@@ -150,6 +150,15 @@ group :development do
   gem 'better_errors', "~> 2.1.1"
   gem 'web-console', '~> 2.0'
   gem 'awesome_print', '~> 1.6.1'
+
+  # Capistrano gems
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano3-unicorn'
+  gem 'capistrano-nvm', require: false
 end
 
 group :test do
@@ -191,3 +200,6 @@ gem 'stripe'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
 gem 'intercom', '~> 3.5.10'
+
+gem 'unicorn'
+gem 'unicorn-worker-killer'
