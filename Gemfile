@@ -50,6 +50,7 @@ gem 'possibly', '~> 1.0.1'
 
 gem 'delayed_job', "~> 4.1.1"
 gem 'delayed_job_active_record', "~> 4.1.0"
+gem 'daemons', '~> 1.2', '>= 1.2.4'
 
 gem 'web_translate_it', "~>2.1.8"
 gem 'rails-i18n', '~> 4.0.8'
@@ -159,6 +160,7 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.0'
   gem 'capistrano3-unicorn'
   gem 'capistrano-nvm', require: false
+  gem 'capistrano3-delayed-job', '~> 1.0'
 end
 
 group :test do
